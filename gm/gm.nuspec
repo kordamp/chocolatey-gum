@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated with JReleaser 1.21.0 at 2025-11-06T20:15:11.364446+01:00 -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- required -->
+    <id>gm</id>
+    <version>0.14.0</version>
+    <authors>Andres Almiray</authors>
+    <description>Gum is a Gradle/Maven/Ant/Bach/JBang wrapper written in Go, inspired in https://github.com/dougborg/gdub and https://github.com/srs/gw.
+Gum automatically detects if the project is Gradle, Maven, Ant, Bach, or JBang based and runs the appropriate command. However 
+in the case that Gum guesses wrong you can force a specific build tool to be used. Similarly as gdub, Gum lets you invoke either 
+Gradle, Maven, or Ant from anywhere within the project structure, not just the root directory.
+
+**Usage**
+
+Gum supports the following flags
+
+* **-ga** force Ant execution
+* **-gb** force Bach execution
+* **-gc** displays current configuration and quits
+* **-gd** displays debug information
+* **-gg** force Gradle build
+* **-gh** displays help information
+* **-gj** force JBang execution
+* **-gm** force Maven build
+* **-gn** executes nearest build file
+* **-gq** run gm in quiet mode
+* **-gr** do not replace goals/tasks
+* **-gv** displays version information
+
+Gum will execute the build based on the root build file unless **-gn** is specified, in which case the nearest build file
+will be selected. If a specific build file is given (**-b**, **--build-file** for Gradle; **-f**, **--file** for Maven,
+**-f**, **-file**, **-buildfile** for Ant) then that file will be used instead.
+</description>
+    <!-- optional -->
+    <title>Gum</title>
+    <projectUrl>https://github.com/kordamp/gm</projectUrl>
+    <copyright>2020 Andres Almiray</copyright>
+    <licenseUrl>https://spdx.org/licenses/Apache-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>tool wrapper java maven gradle ant</tags>
+    <summary>Gum is a Gradle/Maven/Ant/Bach/JBang wrapper written in Go</summary>
+    <projectSourceUrl>https://github.com/kordamp/gm</projectSourceUrl>
+    <packageSourceUrl>https://github.com/kordamp/chocolatey-gum</packageSourceUrl>
+    <docsUrl>https://github.com/kordamp/gm</docsUrl>
+    <bugTrackerUrl>https://github.com/kordamp/gm/issues</bugTrackerUrl>
+    <releaseNotes>https://github.com/kordamp/gm/releases/tag/v0.14.0</releaseNotes>
+    <iconUrl>https://rawcdn.githack.com/foo/bar/efbdc760-395b-43f1-bf69-ba25c374d473/icon.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
